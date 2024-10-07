@@ -16,6 +16,9 @@ import AppMenu from "@/components/menu/AppMenu.vue";
           <slot name="controls"></slot>
         </div>
       </header>
+      <div class="inner">
+        <slot name="inner"></slot>
+      </div>
     </main>
   </div>
 </template>
@@ -33,6 +36,7 @@ import AppMenu from "@/components/menu/AppMenu.vue";
     padding: 15px;
     .header {
       display: flex;
+      margin: 10px 0;
       align-items: center;
       justify-content: space-between;
       .title {
